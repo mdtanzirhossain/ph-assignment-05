@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8aa29afb77.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+        }
+      </style>
+</head>
+<body class="bg-[#F4F7FF]">
+    <!-- header section starts -->
+   <header class="bg-[#FFFFFF] border mx-60 mt-6 mb-11">
+     <div class="h-[100px] w-[1536px] flex gap-1">
+        <div class="left flex items-center gap-2">
+            <div class="logo">
+                <img src="assets/logo.png" alt="logo">
+            </div>
+            <div class="name">
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+        </div>
+        <div class="right flex justify-between items-center gap-6">
+            <div class="flex justify-between items-center gap-6">
+                <div class="tick">
+                    <img src="assets/checkbox.png" alt="checkbox">
+                </div>
+                <div class="count number">
+                    <h1 class="text-2xl font-bold">23</h1>
+                </div>
+            </div>
+            <button><img src = "assets/theme-btn.png" > </button>
+        </div>
+     </div>
+   </header>
+   <!-- header section ends -->
+   <main class="mx-60 mt-6 mb-11">
+        <div class="flex">
+            <div class="main-left border">  
+                <div class="up w-[1146px] border flex justify-around items-center">
+                    <div class="flex justify-center items-center gap-6">
+                        <div class="">
+                            <div class="rounded-full w-[50px] h-[50px] bg-orange-900 flex justify-center items-center"> 
+                                <img class="text-center w-auto h-auto" src="assets/checkbox.png" alt="checkbox">
+                            </div>
+                                    
+                                
+                                
+                            
+                        </div>
+                        <div>
+                            <div><h3>Task Assigned</h3></div>
+                            <div><h1>05</h1></div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-tl from-[#3752FD] to bg-[#6C7FFA] to-[#9BA8F8]">
+                        <div class="flex justify-center items-center ">
+                            <div><img src = "assets/board.png" alt="board"> </div>
+                            <div>
+                                <p>Discover Something<br> New Today</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-center items-center gap-3">
+                            <div><img src = "assets/calender.png" alt="board"> </div>
+                            <div>
+                                <p>
+                                    <script>
+                                        
+                                        const options = { 
+                                            weekday: 'short',    
+                                            year: 'numeric',    
+                                            month: 'long',      
+                                            day: 'numeric'     
+                                        };
+
+                                        const dateStr = new Date().toLocaleDateString('en-US', options);
+                                        const parts = dateStr.split(', ');  
+                                        
+                                        
+                                        document.write(parts[0] + '<br>' + parts[1] + ', ' + parts[2]);
+
+                                    </script>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="card-archive grid grid-cols-3 grid-rows-2 gap-9">
+                        <div id="single-card-1" class="single-card bg-[#F4F7FF]">
+                            <div class="flex flex-col gap-4 pt-6 px-6">
+                                <div><h3 class="text-base py-2 px-4 bg-[#FFFFFF]">ShopEase</h3></div>
+                                <div><h1 class="text-2xl text-[#00303C]">Fix Mobile Button Issue</h1></div>
+                                <div><p class="text-base p-4 bg-[#FFFFFF] opacity-50">Debug using Chrome<br> DevTools, check for overlapping&hellip;</p></div>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <h4 class="text-sm">Deadline</h4>
+                                        <h3 class="text-base text-[#00303C]">21 March 2025</h3>
+                                    </div>
+                                    <button id="card-1-btn" class="text-white text-base px-5 py-2.5 bg-[#3752FD] rounded-[10px]">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-card bg-[#F4F7FF]">
+                            <div class="flex flex-col gap-4 pt-6 px-6">
+                                <div><h3 class="text-base py-2 px-4 bg-[#FFFFFF]">ShopEase</h3></div>
+                                <div><h1 class="text-2xl text-[#00303C]">Fix Mobile Button Issue</h1></div>
+                                <div><p class="text-base p-4 bg-[#FFFFFF] opacity-50">Debug using Chrome<br> DevTools, check for overlapping&hellip;</p></div>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <h4 class="text-sm">Deadline</h4>
+                                        <h3 class="text-base text-[#00303C]">21 March 2025</h3>
+                                    </div>
+                                    <button class="text-white text-base px-5 py-2.5 bg-[#3752FD] rounded-[10px]">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-card bg-[#F4F7FF]">
+                            <div class="flex flex-col gap-4 pt-6 px-6">
+                                <div><h3 class="text-base py-2 px-4 bg-[#FFFFFF]">ShopEase</h3></div>
+                                <div><h1 class="text-2xl text-[#00303C]">Fix Mobile Button Issue</h1></div>
+                                <div><p class="text-base p-4 bg-[#FFFFFF] opacity-50">Debug using Chrome<br> DevTools, check for overlapping&hellip;</p></div>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <h4 class="text-sm">Deadline</h4>
+                                        <h3 class="text-base text-[#00303C]">21 March 2025</h3>
+                                    </div>
+                                    <button class="text-white text-base px-5 py-2.5 bg-[#3752FD] rounded-[10px]">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-card bg-[#F4F7FF]">
+                            <div class="flex flex-col gap-4 pt-6 px-6">
+                                <div><h3 class="text-base py-2 px-4 bg-[#FFFFFF]">ShopEase</h3></div>
+                                <div><h1 class="text-2xl text-[#00303C]">Fix Mobile Button Issue</h1></div>
+                                <div><p class="text-base p-4 bg-[#FFFFFF] opacity-50">Debug using Chrome<br> DevTools, check for overlapping&hellip;</p></div>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <h4 class="text-sm">Deadline</h4>
+                                        <h3 class="text-base text-[#00303C]">21 March 2025</h3>
+                                    </div>
+                                    <button class="text-white text-base px-5 py-2.5 bg-[#3752FD] rounded-[10px]">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-card bg-[#F4F7FF]">
+                            <div class="flex flex-col gap-4 pt-6 px-6">
+                                <div><h3 class="text-base py-2 px-4 bg-[#FFFFFF]">ShopEase</h3></div>
+                                <div><h1 class="text-2xl text-[#00303C]">Fix Mobile Button Issue</h1></div>
+                                <div><p class="text-base p-4 bg-[#FFFFFF] opacity-50">Debug using Chrome<br> DevTools, check for overlapping&hellip;</p></div>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <h4 class="text-sm">Deadline</h4>
+                                        <h3 class="text-base text-[#00303C]">21 March 2025</h3>
+                                    </div>
+                                    <button class="text-white text-base px-5 py-2.5 bg-[#3752FD] rounded-[10px]">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-card bg-[#F4F7FF]">
+                            <div class="flex flex-col gap-4 pt-6 px-6">
+                                <div><h3 class="text-base py-2 px-4 bg-[#FFFFFF]">ShopEase</h3></div>
+                                <div><h1 class="text-2xl text-[#00303C]">Fix Mobile Button Issue</h1></div>
+                                <div><p class="text-base p-4 bg-[#FFFFFF] opacity-50">Debug using Chrome<br> DevTools, check for overlapping&hellip;</p></div>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <h4 class="text-sm">Deadline</h4>
+                                        <h3 class="text-base text-[#00303C]">21 March 2025</h3>
+                                    </div>
+                                    <button class="text-white text-base px-5 py-2.5 bg-[#3752FD] rounded-[10px]">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right w-[366px] h-[965px] rounded">
+                asd
+            </div>
+        </div>    
+   </main>
+   <script src="script/complete.js"></script>
+</body>
+</html>
+
