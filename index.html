@@ -18,7 +18,7 @@
 <body class="bg-[#F4F7FF]">
     <!-- header section starts -->
    <header class="bg-[#FFFFFF] border mx-60 mt-6 mb-11">
-     <div class="h-[100px] w-[1536px] flex gap-1">
+     <div class="h-[100px] w-full flex flex-row justify-between gap-1 px-4">
         <div class="left flex items-center gap-2">
             <div class="logo">
                 <img src="assets/logo.png" alt="logo">
@@ -43,11 +43,11 @@
    <!-- header section ends -->
    <main class="mx-60 mt-6 mb-11">
         <div class="flex">
-            <div class="main-left border">  
-                <div class="up w-[1146px] border flex justify-around items-center">
+            <div class="main-left">  
+                <div class="up w-[1146px] flex justify-around items-center">
                     <div class="flex justify-center items-center gap-6">
                         <div class="">
-                            <div class="rounded-full w-[50px] h-[50px] bg-orange-900 flex justify-center items-center"> 
+                            <div class="rounded-full w-[50px] h-[50px] bg-white flex justify-center items-center"> 
                                 <img class="text-center w-auto h-auto" src="assets/checkbox.png" alt="checkbox">
                             </div>
                                     
@@ -60,14 +60,20 @@
                             <div><h1>05</h1></div>
                         </div>
                     </div>
-                    <div class="bg-gradient-to-tl from-[#3752FD] to bg-[#6C7FFA] to-[#9BA8F8]">
-                        <div class="flex justify-center items-center ">
-                            <div><img src = "assets/board.png" alt="board"> </div>
-                            <div>
-                                <p>Discover Something<br> New Today</p>
+                    <a href="./2nd-page.html">
+                    <div class="w-[524px] h-[128px] rounded-lg bg-gradient-to-tl from-[#3752FD] to bg-[#6C7FFA] to-[#9BA8F8]">
+                        <div class="flex text-2xl justify-center items-center gap-5.2 pt-6">
+                            
+                            <div><img src = "assets/board.png" alt="board"> 
                             </div>
+                            <div>
+                                <p class="text-white">Discover Something<br> New Today</p>
+                            </div>
+                            
+
                         </div>
                     </div>
+                </a>
                     <div>
                         <div class="flex justify-center items-center gap-3">
                             <div><img src = "assets/calender.png" alt="board"> </div>
@@ -183,8 +189,12 @@
                     </div>
                 </div>
             </div>
-            <div class="main-right w-[366px] h-[965px] rounded">
-                asd
+            <div class="main-right w-[366px] h-[965px] rounded-2xl bg-white justify-center">
+                <p class="text-center p-4">activity log</p>
+                <div class="flex justify-center items-center">
+                    <button class="text-white text-base px-5 py-2.5 bg-[#3752FD] rounded-[10px]">Clear Hstory</button>
+                </div>
+                
             </div>
         </div>    
    </main>
